@@ -1,6 +1,16 @@
-Firetray
+Firetray for Zotero 5
 =======
+Although it has been discontinued, FireTray remains the only way to minimize Zotero 5 to the system tray in Linux. The latest version of FireTray doesn't immediately work with Zotero 5. The workaround is to change a single character in the `install.rdf` file saying it is compatible with Zotero 5.
 
+This fork of FireTray implements said modification and contains a script to get the .xpi file. For your convienience, here is the script as a single command that will automagically make `firetray-0.6.1.xpi` appear in your favourite directory.
+
+```
+curdir=`pwd`;tmpdir=`mktemp -d`;cd "$tmpdir";git clone https://github.com/LaserTron/FireTray.git;cd ./FireTray;version=`git rev-parse --short HEAD`;cd src;make build;cd ..;cp build-$version/firetray-0.6.1.xpi "$curdir";rm -Rf "$tmpdir"; cd "$curdir"
+```
+
+
+Old News
+--------
 **[THIS PROJECT IS DISCONTINUED](https://foudil.fr/blog/209/the-web-is-not-the-platform/)**
 
 Overview
