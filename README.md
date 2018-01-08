@@ -1,6 +1,6 @@
 Firetray for Zotero 5
 =======
-Although it has been discontinued, FireTray remains the only way to minimize Zotero 5 to the system tray in Linux. The latest version of FireTray doesn't immediately work with Zotero 5. The workaround is to change a single character in the `install.rdf` file saying it is compatible with Zotero 5.
+Although it has been discontinued, FireTray remains the only way to minimize Zotero 5 to the system tray in Linux. The latest version of FireTray doesn't immediately work with Zotero 5. The workaround, [given here by user **duguyipiao**](https://forums.zotero.org/discussion/16568/taskbar-icon-and-minimise-to-notification-area), is to change a single character in the `install.rdf` file saying it is compatible with Zotero 5.
 
 This fork of FireTray implements said modification and contains a script to get the .xpi file. For your convienience, here is the script as a single command that will automagically make `firetray-0.6.1.xpi` appear in your favourite directory.
 
